@@ -1,5 +1,5 @@
 #Aufgabe 1
-print("Name: Malte Niedereichholz\nGeburtsdatum: 20.02.1992\nAnschrift: Siedlungsstr. 12, 59069 Hamm")
+print("Name: Malte Niedereichholz")
 
 #Aufgabe 2
 from math import pi
