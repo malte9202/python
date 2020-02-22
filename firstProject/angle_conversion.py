@@ -1,6 +1,4 @@
 #import pi for calculation
-#catch type errors for invalid input
-
 from math import pi
 
 def angle_conversion(conversion_type, angle_to_convert):
