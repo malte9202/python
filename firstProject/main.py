@@ -1,7 +1,7 @@
-#Aufgabe 1: print text
+#task 1: print text
 print("Name: Malte Niedereichholz")
 
-#Aufgabe 2: angle conversion
+#task 2: angle conversion
 from math import pi
 def convert_angle_to_degree():
     angle_rad = float(input("Please enter the angle in rad "))
@@ -17,11 +17,11 @@ def convert_angle_from_degree():
 
 convert_angle_from_degree()
 
-#Aufgabe 3: Umrechnung von Temperaturen
-def temperatur_umrechnung():
+#task 3: temperature conversion
+def convert_temperature():
     print(
-        "(1) Umrechnung von Celsius nach Kelvin\n(2) Umrechnung von Celsius nach Fahrenheit\n(3) Umrechnung von Kelvin nach Celsius\n" +
-        "(4) Umrechnung von Kelvin nach Fahrenheit\n(5) Umrechnung von Fahrenheit nach Celsius\n(6) Umrechnung von Fahrenheit nach Kelvin"
+        "(1) Convert Celsius to Kelvin\n(2) Convert Celsius to Fahrenheit\n(3) Convert Kelvin to Celsius\n" +
+        "(4) Convert Kelvin to Fahrenheit\n(5) Convert Fahrenheit to Celsius\n(6) Convert Fahrenheit to Kelvin"
     )
     umrechnungs_typ = int(input("Bitte wählen Sie aus, welche Umrechnung vorgenommen werden soll: "))
     start_temp = float(input("Bitte geben Sie die umzurechnende Temperatur ein: "))
@@ -46,4 +46,4 @@ def temperatur_umrechnung():
     else:
         print("Ungültige Eingabe")
 
-temperatur_umrechnung()
+convert_temperature()
