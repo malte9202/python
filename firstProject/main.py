@@ -1,24 +1,23 @@
-#Aufgabe 1: Textausgabe
-#print("Name: Malte Niedereichholz")
+#Aufgabe 1: print text
+print("Name: Malte Niedereichholz")
 
-#Aufgabe 2: Umrechnung von Winkeln
-#from math import pi
-#def winkel_umrechnung_rad_in_grad():
-#    winkel_bogenmass = float(input("Geben Sie den Winkel im Bogenmaß ein: "))
-#    winkel_grad = (360/(2*pi))*winkel_bogenmass
-#    print("Das Bogenmaß " + str(winkel_bogenmass) + " rad entspricht dem Gradmaß " + str(round(winkel_grad)) + "°")
+#Aufgabe 2: angle conversion
+from math import pi
+def convert_angle_to_degree():
+    angle_rad = float(input("Please enter the angle in rad "))
+    angle_degree = (360 / (2 * pi)) * angle_rad
+    print("The angle " + str(angle_rad) + " rad is equal to " + str(angle_degree) + " degrees")
 
-#winkel_umrechnung_rad_in_grad()
+convert_angle_to_degree()
 
-#def winkel_umrechnung_grad_in_rad():
-#    winkel_grad = float(input("Geben Sie den Winkel in Grad ein: "))
-#    winkel_bogenmass = (winkel_grad/180)*pi
-#    print("Das Gradmaß " + str(winkel_grad) + "° entspricht dem Bogenmaß " + str(winkel_bogenmass) + " rad")
+def convert_angle_from_degree():
+    angle_degree = float(input("Please enter the angle in degree "))
+    angle_rad = (angle_degree / 180) * pi
+    print("The angle " + str(angle_degree) + "degree is equal to " + str(angle_rad) + " rad")
 
-#winkel_umrechnung_grad_in_rad()
+convert_angle_from_degree()
 
 #Aufgabe 3: Umrechnung von Temperaturen
-
 def temperatur_umrechnung():
     print(
         "(1) Umrechnung von Celsius nach Kelvin\n(2) Umrechnung von Celsius nach Fahrenheit\n(3) Umrechnung von Kelvin nach Celsius\n" +
