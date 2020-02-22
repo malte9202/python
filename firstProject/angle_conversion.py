@@ -1,13 +1,14 @@
 #import pi for calculation
 from math import pi
 
+#function to convert angles from rad to degree and from degree to rad
 def angle_conversion(conversion_type, angle_to_convert):
     if conversion_type == 1:
-        converted_angle = (360 / (2 * pi)) * angle_to_convert
+        converted_angle = round((360 / (2 * pi)) * angle_to_convert,2)
         print(str(angle_to_convert) + " rad is equal to " + str(converted_angle) + " degree")
         return converted_angle
     else:
-        converted_angle = (angle_to_convert / 180) * pi
+        converted_angle = round((angle_to_convert / 180) * pi,2)
         print(str(angle_to_convert) + " degree is equal to " + str(converted_angle) + " rad")
         return converted_angle
 
