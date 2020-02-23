@@ -31,4 +31,4 @@ def get_angle_to_convert():
             print("The angle has to be a numeral\nPlease enter a valid value")
     return angle_to_convert
 
-convert_angle(get_conversion_type(), get_angle_to_convert())
+#convert_angle(get_conversion_type(), get_angle_to_convert())
