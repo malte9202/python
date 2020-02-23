@@ -12,19 +12,23 @@ def angle_conversion(conversion_type, angle_to_convert):
         print(str(angle_to_convert) + " degree is equal to " + str(converted_angle) + " rad")
         return converted_angle
 
-conversion_type = None
-while conversion_type not in [1, 2]:
-    try:
-        conversion_type = int(input("Enter 1 or 2 to choose the type of conversion." +
-                                    "Which type of angle conversion do you need?\n(1) rad to degree\n(2) degree to rad\n"))
-    except ValueError:
-        print("Please enter 1 or 2 to choose the type of conversion.")
+def get_conversion_type():
+    conversion_type = None
+    while conversion_type not in [1, 2]:
+        try:
+            conversion_type = int(input("Enter 1 or 2 to choose the type of conversion." +
+                                        "Which type of angle conversion do you need?\n(1) rad to degree\n(2) degree to rad\n"))
+        except ValueError:
+            print("Please enter 1 or 2 to choose the type of conversion.")
+    return conversion_type
 
-angle_to_convert = None
-while isinstance(angle_to_convert, float) == False:
-    try:
-        angle_to_convert = float(input("Enter the angle you want to convert "))
-    except ValueError:
-        print("The angle has to be a numeral\nPlease enter a valid value")
+def get_angle_to_convert():
+    angle_to_convert = None
+    while isinstance(angle_to_convert, float) == False:
+        try:
+            angle_to_convert = float(input("Enter the angle you want to convert "))
+        except ValueError:
+            print("The angle has to be a numeral\nPlease enter a valid value")
+    return angle_to_convert
 
-angle_conversion(conversion_type, angle_to_convert)
+angle_conversion(get_conversion_type(), get_angle_to_convert())
