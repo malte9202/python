@@ -1,8 +1,6 @@
-class Run():
-    def __init__(self, date, distance, duration, average_speed, is_indoor):
-        self.date = date
-        self.distance = distance
-        self.duration = duration
-        self.average_speed = average_speed
-        self.is_indoor = is_indoor
+import sqlite3
+# Klasse für Run Objekt
+# Verbindung mit mySQL Datenbank -> welches Tool?
+# Daten zum Lauf in DB Schreiben
+# GUI zur Eingabe der Daten
 
