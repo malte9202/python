@@ -8,20 +8,20 @@ win = pygame.display.set_mode((500, 500))
 # set window title
 pygame.display.set_caption("First Game")
 
+screen_width = 500
+
 # define variables for character
 x = 50  # x coordinate
 y = 50  # y coordinate
 width = 40  # width
 height = 60  # height
-vel = 5  # movement "speed"
+vel = 10  # movement "speed"
 
-# game loop
 run = True
-while run:
+while run:  # game loop
     pygame.time.delay(100)
 
-    # get event
-    for event in pygame.event.get():
+    for event in pygame.event.get():  # get event
 
         # event click X on the window
         if event.type == pygame.QUIT:
@@ -29,25 +29,18 @@ while run:
     # get pressed keys
     keys = pygame.key.get_pressed()
 
-    # move left
-    if keys[pygame.K_LEFT]:
+    if keys[pygame.K_LEFT] and x > vel:  # move left and check for borders
         x -= vel
-
-    # move right
-    if keys[pygame.K_RIGHT]:
+    if keys[pygame.K_RIGHT] and x < screen_width - width - vel:  # move right and check for borders
         x += vel
-
-    # move up
-    if keys[pygame.K_UP]:
+    if keys[pygame.K_UP] and y < vel:  # move up and check for borders
         y -= vel
-
-    # move down
-    if keys[pygame.K_DOWN]:
+    if keys[pygame.K_DOWN] and y > screen_width - height - vel:  # move down and check for borders
         y += vel
 
-    win.fill((0, 0, 0))
-    pygame.draw.rect(win, (255, 0, 0), (x, y, width, height))
-    pygame.display.update()
+    win.fill((0, 0, 0))  # fill up former position of the character
+    pygame.draw.rect(win, (255, 0, 0), (x, y, width, height))  # draw character
+    pygame.display.update()  # update window
 
-pygame.quit()
+pygame.quit()  # quit program
     
