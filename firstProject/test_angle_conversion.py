@@ -12,6 +12,6 @@ class TestAngleConversion(unittest.TestCase):
         self.assertEqual(convert_angle(2, 90), 1.57, "Should be 1.57")
         self.assertEqual(convert_angle(2, 180), 3.14, "Should be 3.14")
         self.assertEqual(convert_angle(2, 360), 6.28, "Should be 6.28")
-    
+
 if __name__ == '__main__':
     unittest.main()
