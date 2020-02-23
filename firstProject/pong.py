@@ -7,6 +7,10 @@ window.bgcolor("black")
 window.setup(width=800, height=600)
 window.tracer(0)
 
+# Score
+score_a = 0
+score_b = 0
+
 # Paddle A
 paddle_a = turtle.Turtle()  # turtle object
 paddle_a.speed(0)  # sets maximum speed
@@ -32,9 +36,17 @@ ball.shape("square")  # defines shape
 ball.color("white")  # defines color
 ball.penup()
 ball.goto(0, 0)
-ball.dx = 0.25  # Try different numbers, ball always moves that many pixels
-ball.dy = 0.25  # Try different numbers, ball always moves that many pixels
+ball.dx = 0.1  # Try different numbers, ball always moves that many pixels
+ball.dy = 0.1  # Try different numbers, ball always moves that many pixels
 
+# Pen
+pen = turtle.Turtle()
+pen.speed(0)  # animation speed
+pen.color("white")
+pen.penup()
+pen.hideturtle()  # hide because we don't want to see it
+pen.goto(0, 260)
+pen.write("Player A: 0  Player B: 0", align="center", font=("Courier", 24, "normal"))
 
 # Functions to move paddles up and down
 def paddle_a_up():
@@ -76,7 +88,7 @@ while True:
     ball.setx(ball.xcor() + ball.dx)
     ball.sety(ball.ycor() + ball.dy)
 
-    # Border checking
+    # Border checking top and bottom
     if ball.ycor() > 290:  # check if ball hits the border
         ball.sety(290)  # pin y coordinate
         ball.dy *= -1  # reverses the direction
@@ -85,4 +97,28 @@ while True:
         ball.sety(-290)
         ball.dy *= -1
 
-    if ball.xcor() < 
+    # checking if the ball hits the left or right border and reset the ball to the center
+    if ball.xcor() > 390:
+        ball.goto(0, 0)
+        ball.dx *= -1
+        score_a += 1
+        pen.clear()
+        pen.write("Player A: {}  Player B: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
+
+    if ball.xcor() < -390:
+        ball.goto(0, 0)
+        ball.dx *= -1
+        score_b += 1
+        pen.clear()
+        pen.write("Player A: {}  Player B: {}".format(score_a, score_b), align="center", font=("Courier", 24, "normal"))
+
+    # Paddle and ball collisions
+    if ball.xcor() > 340 and ball.xcor() < 350 and \
+            (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() - 40):
+        ball.setx(340)
+        ball.dx *= -1
+
+    if ball.xcor() < -340 and ball.xcor() > -350 and \
+            (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() - 40):
+        ball.setx(-340)
+        ball.dx *= -1
