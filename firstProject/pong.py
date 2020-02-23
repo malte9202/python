@@ -36,8 +36,8 @@ ball.shape("square")  # defines shape
 ball.color("white")  # defines color
 ball.penup()
 ball.goto(0, 0)
-ball.dx = 0.1  # Try different numbers, ball always moves that many pixels
-ball.dy = 0.1  # Try different numbers, ball always moves that many pixels
+ball.dx = 0.9  # Try different numbers, ball always moves that many pixels
+ball.dy = 0.9  # Try different numbers, ball always moves that many pixels
 
 # Pen
 pen = turtle.Turtle()
