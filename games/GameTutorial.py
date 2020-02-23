@@ -12,6 +12,6 @@ height = 60
 vel = 5
 
 run = True
-while run:
-    pygame.time.delay(100)
+#while run:
+    #pygame.time.delay(100)
     
