@@ -29,8 +29,9 @@ def create_table(conn, create_table_sql):
 def main():
     database = r"/home/malte/python/ActivityTracker/activities.db"
 
-    sql_create_activities_table = '''CREATE TABLE activities
-             (id int, date text, type text, distance real, duration real, average_speed real, info text)'''
+    sql_create_activities_table = '''CREATE TABLE IF NOT EXISTS activities
+             (id INTEGER PRIMARY KEY, date TEXT, type TEXT, distance REAL, duration REAL, 
+              average_speed REAL, info TEXT)'''
 
     # create a database connection
     conn = create_connection(database)
