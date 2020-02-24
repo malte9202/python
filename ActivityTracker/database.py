@@ -30,14 +30,9 @@ def main():
     database = r"/home/malte/python/ActivityTracker/activities.db"
 
     sql_create_activities_table = """ CREATE TABLE IF NOT EXISTS activities (
-                                        
-                                        id INT PRIMARY KEY,
-                                        date DATE NOT NULL,
-                                        type VARCHAR NOT NULL,
-                                        distance FLOAT, 
-                                        duration FLOAT,
-                                        average_speed FLOAT,
-                                        info VARCHAR 
+                                        id INTEGER PRIMARY KEY
+                                        test INTEGER 
+                                        test2 TEXT 
                                     );"""
     # create a database connection
     conn = create_connection(database)
