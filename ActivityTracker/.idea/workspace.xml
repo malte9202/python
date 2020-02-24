@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb0309a9-3328-4b91-bf8d-6abe0a2a1b01" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,5 +72,27 @@
       <updated>1582568265294</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="217" width="614" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582571046096">
+      <screen x="67" y="27" width="1213" height="773" />
+    </state>
+    <state x="361" y="217" width="614" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1213.773@67.27.1213.773" timestamp="1582571046096" />
+    <state width="1190" height="185" key="GridCell.Tab.0.bottom" timestamp="1582570631361">
+      <screen x="67" y="27" width="1213" height="773" />
+    </state>
+    <state width="1190" height="185" key="GridCell.Tab.0.bottom/67.27.1213.773@67.27.1213.773" timestamp="1582570631361" />
+    <state width="1190" height="185" key="GridCell.Tab.0.center" timestamp="1582570631361">
+      <screen x="67" y="27" width="1213" height="773" />
+    </state>
+    <state width="1190" height="185" key="GridCell.Tab.0.center/67.27.1213.773@67.27.1213.773" timestamp="1582570631361" />
+    <state width="1190" height="185" key="GridCell.Tab.0.left" timestamp="1582570631360">
+      <screen x="67" y="27" width="1213" height="773" />
+    </state>
+    <state width="1190" height="185" key="GridCell.Tab.0.left/67.27.1213.773@67.27.1213.773" timestamp="1582570631360" />
+    <state width="1190" height="185" key="GridCell.Tab.0.right" timestamp="1582570631361">
+      <screen x="67" y="27" width="1213" height="773" />
+    </state>
+    <state width="1190" height="185" key="GridCell.Tab.0.right/67.27.1213.773@67.27.1213.773" timestamp="1582570631361" />
   </component>
 </project>

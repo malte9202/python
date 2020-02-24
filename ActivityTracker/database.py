@@ -31,8 +31,22 @@ def main():
 
     sql_create_activities_table = """ CREATE TABLE IF NOT EXISTS activities (
                                         
-                                        id integer PRIMARY KEY,
-                                        
+                                        id INT PRIMARY KEY,
+                                        date DATE NOT NULL,
+                                        type VARCHAR NOT NULL,
+                                        distance FLOAT, 
+                                        duration FLOAT,
+                                        average_speed FLOAT,
+                                        info VARCHAR 
+                                    );"""
+    # create a database connection
+    conn = create_connection(database)
+
+    # create tables
+    if conn is not None:
+        create_table(conn, sql_create_activities_table)
+    else:
+        print("Error! Cannot create the database connection.")
 
 
 if __name__ == '__main__':
