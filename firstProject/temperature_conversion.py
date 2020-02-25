@@ -7,7 +7,7 @@ def get_convert_type():
     while convert_type not in [1,2,3,4,5,6]:
         try:
             convert_type = int(input("Choose a type of conversion by entering a number from 1 to 6: "))
-            raise ValueError  # raise error to print error message from below 
+            raise ValueError  # raise error to print error message from below
         except ValueError:
             print("Invalid input. Enter a number from 1 to 6 to choose the type of conversion")
     return convert_type
