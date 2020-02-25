@@ -17,7 +17,12 @@ cursor.execute(create_table_activities)
 
 activity_insert = 'INSERT INTO activities VALUES (?, ?, ?, ?, ?, ?, ?)'
 
-cursor.execute(activity_insert, (1, '2020-02-24', 'run', 10, 60, 10, 'indoor'))
+#cursor.execute(activity_insert, (1, '2020-02-24', 'run', 10, 60, 10, 'indoor'))
+
+show_activities = 'SELECT * FROM activities LIMIT 10'
+
+activity_overview = cursor.execute(show_activities)
 
 connection.commit()
 
+print(activity_overview)
