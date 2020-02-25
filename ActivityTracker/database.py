@@ -1,4 +1,5 @@
 import sqlite3
+from sqlite3 import Error
 
 connection = sqlite3.connect("activity_tracker.db")
 cursor = connection.cursor()

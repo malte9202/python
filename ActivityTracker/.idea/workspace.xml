@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="eb0309a9-3328-4b91-bf8d-6abe0a2a1b01" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/activities.db" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../firstProject/temperature_conversion.py" beforeDir="false" afterPath="$PROJECT_DIR$/../firstProject/temperature_conversion.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +32,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../firstProject" />
   </component>
   <component name="RunManager">
     <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -84,26 +84,26 @@
       <screen x="67" y="27" width="1213" height="773" />
     </state>
     <state x="406" y="161" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1213.773@67.27.1213.773" timestamp="1582572302851" />
-    <state x="456" y="170" width="424" height="484" key="FileChooserDialogImpl" timestamp="1582573835400">
+    <state x="456" y="170" width="424" height="484" key="FileChooserDialogImpl" timestamp="1582651553098">
       <screen x="67" y="27" width="1213" height="773" />
     </state>
-    <state x="456" y="170" width="424" height="484" key="FileChooserDialogImpl/67.27.1213.773@67.27.1213.773" timestamp="1582573835400" />
-    <state width="1190" height="158" key="GridCell.Tab.0.bottom" timestamp="1582579567162">
+    <state x="456" y="170" width="424" height="484" key="FileChooserDialogImpl/67.27.1213.773@67.27.1213.773" timestamp="1582651553098" />
+    <state width="1190" height="158" key="GridCell.Tab.0.bottom" timestamp="1582579816982">
       <screen x="67" y="27" width="1213" height="773" />
     </state>
-    <state width="1190" height="158" key="GridCell.Tab.0.bottom/67.27.1213.773@67.27.1213.773" timestamp="1582579567162" />
-    <state width="1190" height="158" key="GridCell.Tab.0.center" timestamp="1582579567161">
+    <state width="1190" height="158" key="GridCell.Tab.0.bottom/67.27.1213.773@67.27.1213.773" timestamp="1582579816982" />
+    <state width="1190" height="158" key="GridCell.Tab.0.center" timestamp="1582579816981">
       <screen x="67" y="27" width="1213" height="773" />
     </state>
-    <state width="1190" height="158" key="GridCell.Tab.0.center/67.27.1213.773@67.27.1213.773" timestamp="1582579567161" />
-    <state width="1190" height="158" key="GridCell.Tab.0.left" timestamp="1582579567160">
+    <state width="1190" height="158" key="GridCell.Tab.0.center/67.27.1213.773@67.27.1213.773" timestamp="1582579816981" />
+    <state width="1190" height="158" key="GridCell.Tab.0.left" timestamp="1582579816980">
       <screen x="67" y="27" width="1213" height="773" />
     </state>
-    <state width="1190" height="158" key="GridCell.Tab.0.left/67.27.1213.773@67.27.1213.773" timestamp="1582579567160" />
-    <state width="1190" height="158" key="GridCell.Tab.0.right" timestamp="1582579567161">
+    <state width="1190" height="158" key="GridCell.Tab.0.left/67.27.1213.773@67.27.1213.773" timestamp="1582579816980" />
+    <state width="1190" height="158" key="GridCell.Tab.0.right" timestamp="1582579816981">
       <screen x="67" y="27" width="1213" height="773" />
     </state>
-    <state width="1190" height="158" key="GridCell.Tab.0.right/67.27.1213.773@67.27.1213.773" timestamp="1582579567161" />
+    <state width="1190" height="158" key="GridCell.Tab.0.right/67.27.1213.773@67.27.1213.773" timestamp="1582579816981" />
     <state width="1190" height="232" key="GridCell.Tab.1.bottom" timestamp="1582579256945">
       <screen x="67" y="27" width="1213" height="773" />
     </state>
